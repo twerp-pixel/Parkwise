@@ -1,0 +1,184 @@
+[
+ {
+  "id": 0,
+  "slug": "indiranagar",
+  "name": "Indiranagar High Street",
+  "lat": 12.9784,
+  "lon": 77.6408,
+  "capacity": 280,
+  "base_price": 60,
+  "poi": {
+   "retail": 0.4,
+   "nightlife": 0.35,
+   "residential": 0.15,
+   "office": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 1,
+  "slug": "koramangala",
+  "name": "Koramangala Food Strip",
+  "lat": 12.9352,
+  "lon": 77.6245,
+  "capacity": 220,
+  "base_price": 50,
+  "poi": {
+   "nightlife": 0.55,
+   "retail": 0.2,
+   "office": 0.15,
+   "residential": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 2,
+  "slug": "mgroad",
+  "name": "MG Road Commercial",
+  "lat": 12.9756,
+  "lon": 77.6097,
+  "capacity": 450,
+  "base_price": 80,
+  "poi": {
+   "office": 0.45,
+   "retail": 0.35,
+   "transit": 0.1,
+   "nightlife": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 3,
+  "slug": "whitefield",
+  "name": "Whitefield Tech Park",
+  "lat": 12.9855,
+  "lon": 77.727,
+  "capacity": 900,
+  "base_price": 40,
+  "poi": {
+   "office": 0.9,
+   "retail": 0.05,
+   "residential": 0.05
+  },
+  "venue": false
+ },
+ {
+  "id": 4,
+  "slug": "manyata",
+  "name": "Manyata Business Park",
+  "lat": 13.0475,
+  "lon": 77.62,
+  "capacity": 1100,
+  "base_price": 40,
+  "poi": {
+   "office": 0.95,
+   "transit": 0.05
+  },
+  "venue": false
+ },
+ {
+  "id": 5,
+  "slug": "majestic",
+  "name": "Majestic Transit Hub",
+  "lat": 12.9767,
+  "lon": 77.5713,
+  "capacity": 600,
+  "base_price": 30,
+  "poi": {
+   "transit": 0.8,
+   "retail": 0.15,
+   "residential": 0.05
+  },
+  "venue": false
+ },
+ {
+  "id": 6,
+  "slug": "rajajinagar",
+  "name": "Rajajinagar Mall",
+  "lat": 13.011,
+  "lon": 77.555,
+  "capacity": 700,
+  "base_price": 40,
+  "poi": {
+   "retail": 0.8,
+   "nightlife": 0.1,
+   "residential": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 7,
+  "slug": "jayanagar",
+  "name": "Jayanagar Market",
+  "lat": 12.925,
+  "lon": 77.5938,
+  "capacity": 260,
+  "base_price": 30,
+  "poi": {
+   "retail": 0.7,
+   "residential": 0.2,
+   "medical": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 8,
+  "slug": "stadium",
+  "name": "Stadium District",
+  "lat": 12.9788,
+  "lon": 77.5996,
+  "capacity": 1500,
+  "base_price": 50,
+  "poi": {
+   "retail": 0.2,
+   "residential": 0.3,
+   "office": 0.2,
+   "nightlife": 0.3
+  },
+  "venue": true
+ },
+ {
+  "id": 9,
+  "slug": "hebbal",
+  "name": "Hebbal Hospital Cluster",
+  "lat": 13.0358,
+  "lon": 77.597,
+  "capacity": 380,
+  "base_price": 30,
+  "poi": {
+   "medical": 0.8,
+   "residential": 0.1,
+   "office": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 10,
+  "slug": "airport",
+  "name": "Airport Road Long-Stay",
+  "lat": 13.19,
+  "lon": 77.7,
+  "capacity": 1200,
+  "base_price": 45,
+  "poi": {
+   "travel": 0.9,
+   "transit": 0.1
+  },
+  "venue": false
+ },
+ {
+  "id": 11,
+  "slug": "sarjapur",
+  "name": "Sarjapur Residential",
+  "lat": 12.915,
+  "lon": 77.67,
+  "capacity": 240,
+  "base_price": 20,
+  "poi": {
+   "residential": 0.85,
+   "retail": 0.1,
+   "office": 0.05
+  },
+  "venue": false
+ }
+]

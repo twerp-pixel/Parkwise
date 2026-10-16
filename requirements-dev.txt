@@ -1,0 +1,3 @@
+-r requirements.txt
+httpx>=0.27      # required by starlette's TestClient
+pytest>=8        # optional: the suite also runs with `python -m unittest`

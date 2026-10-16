@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parkwise</title>
+  <meta name="description" content="Parking demand forecasts and guardrailed dynamic pricing.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f5fd1'/%3E%3Cpath d='M11 24V8h7a5 5 0 0 1 0 10h-3' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">P</span>Parkwise</div>
+      <nav class="nav" aria-label="Main">
+        <a href="#/overview">Overview</a>
+        <a href="#/forecast">Forecast</a>
+        <a href="#/pricing">Pricing studio</a>
+        <a href="#/health">Model health</a>
+        <a href="#/voice">Customer voice</a>
+        <a href="#/about">How it works</a>
+      </nav>
+      <div class="rail-foot">
+        <div id="rail-data">Synthetic data</div>
+        <button id="theme" type="button" aria-label="Switch colour theme">Switch theme</button>
+      </div>
+    </aside>
+    <main id="view" tabindex="-1"><div class="skeleton">Loading…</div></main>
+  </div>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

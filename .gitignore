@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# artifacts/ is committed so the demo runs immediately; regenerate with `make build`.
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example

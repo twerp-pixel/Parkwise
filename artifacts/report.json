@@ -1,0 +1,2267 @@
+{
+ "generated_at": "2026-10-16T19:13:01.366611+00:00",
+ "seed": 7,
+ "data": {
+  "start": "2025-10-01",
+  "end": "2026-10-14",
+  "live_date": "2026-10-15",
+  "train_end": "2026-08-15",
+  "val_end": "2026-09-15",
+  "rows": 109440,
+  "zones": 12,
+  "experiment_share": 0.11995614035087719,
+  "sensor_gap_share": 0.006679459064327486,
+  "full_hour_share": 0.11095577485380118,
+  "events": 52
+ },
+ "forecast": {
+  "point": {
+   "gbm": {
+    "mae": 0.06158996766777702,
+    "rmse": 0.09408832242313933,
+    "wmape": 0.10762515723871759,
+    "bias": -0.017679360008009234,
+    "n": 8286
+   },
+   "seasonal_naive": {
+    "mae": 0.10537847005062977,
+    "rmse": 0.181213384620849,
+    "wmape": 0.1841432109520032,
+    "bias": -0.014074381153998207,
+    "n": 8286
+   },
+   "hist_avg_4w": {
+    "mae": 0.08203302215815196,
+    "rmse": 0.13670560034972484,
+    "wmape": 0.14334829588094455,
+    "bias": -0.022237008931008526,
+    "n": 8286
+   }
+  },
+  "occupancy": {
+   "gbm": {
+    "mae": 0.04456525880305555,
+    "rmse": 0.06617566270402468,
+    "wmape": 0.08195381354667478,
+    "bias": -0.006549167697277246,
+    "n": 8286
+   },
+   "seasonal_naive": {
+    "mae": 0.07858296909803265,
+    "rmse": 0.13559445715556878,
+    "wmape": 0.14451108711978833,
+    "bias": -0.010628805405273169,
+    "n": 8286
+   },
+   "hist_avg_4w": {
+    "mae": 0.06144612689849166,
+    "rmse": 0.10229344725277725,
+    "wmape": 0.11299708701925086,
+    "bias": -0.009754009293204396,
+    "n": 8286
+   }
+  },
+  "full_lot_detection": {
+   "gbm": {
+    "precision": 0.8274483677548301,
+    "recall": 0.8547832071576049,
+    "positives": 1453
+   },
+   "seasonal_naive": {
+    "precision": 0.6976597090449083,
+    "recall": 0.7591190640055059,
+    "positives": 1453
+   }
+  },
+  "interval": {
+   "coverage": 0.7657494569152787,
+   "mean_width": 0.16987318895299758,
+   "nominal": 0.8
+  },
+  "error_vs_truth_mae": 0.05445878632124074,
+  "poisson_noise_floor_mae": 0.026841150575115748,
+  "model": {
+   "n_iter": 431,
+   "cqr_adjustment": 0.006641375325547205,
+   "n_features": 35,
+   "train_rows": 83525,
+   "val_rows": 8871,
+   "test_rows": 8286
+  },
+  "by_zone": [
+   {
+    "zone_id": 0,
+    "zone": "Indiranagar High Street",
+    "gbm_wmape": 0.1077029885453516,
+    "naive_wmape": 0.16424868660091033,
+    "coverage": 0.7413793103448276
+   },
+   {
+    "zone_id": 1,
+    "zone": "Koramangala Food Strip",
+    "gbm_wmape": 0.11686804172241229,
+    "naive_wmape": 0.1687663498288291,
+    "coverage": 0.7296898079763663
+   },
+   {
+    "zone_id": 2,
+    "zone": "MG Road Commercial",
+    "gbm_wmape": 0.10571423030113414,
+    "naive_wmape": 0.1733911748887852,
+    "coverage": 0.7212643678160919
+   },
+   {
+    "zone_id": 3,
+    "zone": "Whitefield Tech Park",
+    "gbm_wmape": 0.09010063602251348,
+    "naive_wmape": 0.21355706219585086,
+    "coverage": 0.8343023255813954
+   },
+   {
+    "zone_id": 4,
+    "zone": "Manyata Business Park",
+    "gbm_wmape": 0.08488393813481074,
+    "naive_wmape": 0.2027868576260498,
+    "coverage": 0.8879310344827587
+   },
+   {
+    "zone_id": 5,
+    "zone": "Majestic Transit Hub",
+    "gbm_wmape": 0.10460821998029035,
+    "naive_wmape": 0.16674583910479104,
+    "coverage": 0.6820809248554913
+   },
+   {
+    "zone_id": 6,
+    "zone": "Rajajinagar Mall",
+    "gbm_wmape": 0.09759426413311527,
+    "naive_wmape": 0.18668572622965116,
+    "coverage": 0.8117816091954023
+   },
+   {
+    "zone_id": 7,
+    "zone": "Jayanagar Market",
+    "gbm_wmape": 0.12408513322199209,
+    "naive_wmape": 0.2098383729981672,
+    "coverage": 0.7557471264367817
+   },
+   {
+    "zone_id": 8,
+    "zone": "Stadium District",
+    "gbm_wmape": 0.15824456449508315,
+    "naive_wmape": 0.3802488991800629,
+    "coverage": 0.8058394160583942
+   },
+   {
+    "zone_id": 9,
+    "zone": "Hebbal Hospital Cluster",
+    "gbm_wmape": 0.09890516718356823,
+    "naive_wmape": 0.14084293538663378,
+    "coverage": 0.8060344827586207
+   },
+   {
+    "zone_id": 10,
+    "zone": "Airport Road Long-Stay",
+    "gbm_wmape": 0.0955580677322571,
+    "naive_wmape": 0.15909236981823177,
+    "coverage": 0.6755952380952381
+   },
+   {
+    "zone_id": 11,
+    "zone": "Sarjapur Residential",
+    "gbm_wmape": 0.12282327440610337,
+    "naive_wmape": 0.17959074572629458,
+    "coverage": 0.7341954022988506
+   }
+  ],
+  "by_hour": [
+   {
+    "hour": 0,
+    "gbm_mae": 0.041208054998748404,
+    "naive_mae": 0.06742849901926493
+   },
+   {
+    "hour": 1,
+    "gbm_mae": 0.036190913424728535,
+    "naive_mae": 0.056627323445017384
+   },
+   {
+    "hour": 2,
+    "gbm_mae": 0.030930722506322377,
+    "naive_mae": 0.0457822722856583
+   },
+   {
+    "hour": 3,
+    "gbm_mae": 0.031675546141082034,
+    "naive_mae": 0.04400646747437425
+   },
+   {
+    "hour": 4,
+    "gbm_mae": 0.03336202748116705,
+    "naive_mae": 0.046080071432371326
+   },
+   {
+    "hour": 5,
+    "gbm_mae": 0.033967513232317344,
+    "naive_mae": 0.04975847147449616
+   },
+   {
+    "hour": 6,
+    "gbm_mae": 0.03754150237605861,
+    "naive_mae": 0.05407598857128386
+   },
+   {
+    "hour": 7,
+    "gbm_mae": 0.04322279938924488,
+    "naive_mae": 0.06750243492557388
+   },
+   {
+    "hour": 8,
+    "gbm_mae": 0.05265894252165755,
+    "naive_mae": 0.08646344339014919
+   },
+   {
+    "hour": 9,
+    "gbm_mae": 0.059356203411410596,
+    "naive_mae": 0.10169128887359617
+   },
+   {
+    "hour": 10,
+    "gbm_mae": 0.06799659735089039,
+    "naive_mae": 0.12045160135660388
+   },
+   {
+    "hour": 11,
+    "gbm_mae": 0.06597788592022753,
+    "naive_mae": 0.12377370603576492
+   },
+   {
+    "hour": 12,
+    "gbm_mae": 0.07583878379705884,
+    "naive_mae": 0.13948379994184198
+   },
+   {
+    "hour": 13,
+    "gbm_mae": 0.08206806783266855,
+    "naive_mae": 0.14500121032056626
+   },
+   {
+    "hour": 14,
+    "gbm_mae": 0.08130351662729055,
+    "naive_mae": 0.1493710832959049
+   },
+   {
+    "hour": 15,
+    "gbm_mae": 0.0788511824201888,
+    "naive_mae": 0.142433636444183
+   },
+   {
+    "hour": 16,
+    "gbm_mae": 0.07964762262137506,
+    "naive_mae": 0.14323876428188198
+   },
+   {
+    "hour": 17,
+    "gbm_mae": 0.08425529581327705,
+    "naive_mae": 0.15896135585794705
+   },
+   {
+    "hour": 18,
+    "gbm_mae": 0.09412163961363118,
+    "naive_mae": 0.1640434942526889
+   },
+   {
+    "hour": 19,
+    "gbm_mae": 0.08801232003056986,
+    "naive_mae": 0.14964434460021336
+   },
+   {
+    "hour": 20,
+    "gbm_mae": 0.08813319597583667,
+    "naive_mae": 0.1494942739588344
+   },
+   {
+    "hour": 21,
+    "gbm_mae": 0.07549942116843004,
+    "naive_mae": 0.1292658757207476
+   },
+   {
+    "hour": 22,
+    "gbm_mae": 0.06248721843238413,
+    "naive_mae": 0.107307264640344
+   },
+   {
+    "hour": 23,
+    "gbm_mae": 0.05349339465451566,
+    "naive_mae": 0.08648057834702765
+   }
+  ],
+  "by_regime": [
+   {
+    "regime": "Working days",
+    "gbm_wmape": 0.10312600280968584,
+    "naive_wmape": 0.1754858851668149,
+    "n": 5713
+   },
+   {
+    "regime": "Weekends & holidays",
+    "gbm_wmape": 0.11839001246127379,
+    "naive_wmape": 0.20485707178120605,
+    "n": 2573
+   },
+   {
+    "regime": "Event hours",
+    "gbm_wmape": 0.13858835363076763,
+    "naive_wmape": 0.2386962934435752,
+    "n": 435
+   },
+   {
+    "regime": "Rainy hours",
+    "gbm_wmape": 0.10495850791921425,
+    "naive_wmape": 0.17618467548773384,
+    "n": 543
+   }
+  ],
+  "ablation_wmape": {
+   "Full model": 0.10762515723871759,
+   "No history features": 0.12425725778123638,
+   "No event schedule": 0.11191064393343135,
+   "No weather forecast": 0.10878251765772749,
+   "No holiday flags": 0.10774230194860046
+  },
+  "permutation_importance": {
+   "baseline_mae": 0.0614060491575282,
+   "mae_increase_when_shuffled": {
+    "History (lags & levels)": 0.3308412486487448,
+    "Calendar & holidays": 0.003093474209376066,
+    "Weather forecast": 0.0009993556543979782,
+    "Event schedule": 0.003110232370316652,
+    "Zone profile (POI mix, capacity)": 0.010253018244299148
+   }
+  },
+  "cold_start": [
+   {
+    "zone_id": 0,
+    "zone": "Indiranagar High Street",
+    "dominant_archetype": "retail",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.1637107079844214,
+    "cold_start_recalibrated_wmape": 0.15405572151355984,
+    "network_average_wmape": 0.3470181441414556,
+    "full_model_wmape": 0.11018543899479538
+   },
+   {
+    "zone_id": 1,
+    "zone": "Koramangala Food Strip",
+    "dominant_archetype": "nightlife",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.22314150456897708,
+    "cold_start_recalibrated_wmape": 0.2113792363240307,
+    "network_average_wmape": 0.3874962240778512,
+    "full_model_wmape": 0.12066964792864485
+   },
+   {
+    "zone_id": 2,
+    "zone": "MG Road Commercial",
+    "dominant_archetype": "office",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.4171220589672909,
+    "cold_start_recalibrated_wmape": 0.35346079956431026,
+    "network_average_wmape": 0.3950167369012367,
+    "full_model_wmape": 0.10162022556345139
+   },
+   {
+    "zone_id": 3,
+    "zone": "Whitefield Tech Park",
+    "dominant_archetype": "office",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.20111155371634495,
+    "cold_start_recalibrated_wmape": 0.12909843009910268,
+    "network_average_wmape": 0.7417959124202494,
+    "full_model_wmape": 0.09051924778653532
+   },
+   {
+    "zone_id": 4,
+    "zone": "Manyata Business Park",
+    "dominant_archetype": "office",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.2106270962893861,
+    "cold_start_recalibrated_wmape": 0.22887678943627904,
+    "network_average_wmape": 0.9497722780539973,
+    "full_model_wmape": 0.07909973314705611
+   },
+   {
+    "zone_id": 5,
+    "zone": "Majestic Transit Hub",
+    "dominant_archetype": "transit",
+    "archetype_seen_elsewhere": false,
+    "cold_start_wmape": 0.440746649896509,
+    "cold_start_recalibrated_wmape": 0.4318615193531748,
+    "network_average_wmape": 0.365903129354953,
+    "full_model_wmape": 0.10571444237193675
+   },
+   {
+    "zone_id": 6,
+    "zone": "Rajajinagar Mall",
+    "dominant_archetype": "retail",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.230427132525289,
+    "cold_start_recalibrated_wmape": 0.23932091560152885,
+    "network_average_wmape": 0.42912221591538907,
+    "full_model_wmape": 0.09980855292465315
+   },
+   {
+    "zone_id": 7,
+    "zone": "Jayanagar Market",
+    "dominant_archetype": "retail",
+    "archetype_seen_elsewhere": true,
+    "cold_start_wmape": 0.18442647843736004,
+    "cold_start_recalibrated_wmape": 0.26661452338844815,
+    "network_average_wmape": 0.27370341585282104,
+    "full_model_wmape": 0.1308628292051661
+   },
+   {
+    "zone_id": 8,
+    "zone": "Stadium District",
+    "dominant_archetype": "nightlife",
+    "archetype_seen_elsewhere": false,
+    "cold_start_wmape": 1.2496385191518182,
+    "cold_start_recalibrated_wmape": 0.26879602862688384,
+    "network_average_wmape": 1.061099198142524,
+    "full_model_wmape": 0.17396544700226116
+   },
+   {
+    "zone_id": 9,
+    "zone": "Hebbal Hospital Cluster",
+    "dominant_archetype": "medical",
+    "archetype_seen_elsewhere": false,
+    "cold_start_wmape": 0.4190348191715493,
+    "cold_start_recalibrated_wmape": 0.39652765690594394,
+    "network_average_wmape": 0.316157665400743,
+    "full_model_wmape": 0.09796293378181482
+   },
+   {
+    "zone_id": 10,
+    "zone": "Airport Road Long-Stay",
+    "dominant_archetype": "travel",
+    "archetype_seen_elsewhere": false,
+    "cold_start_wmape": 0.33650430104195994,
+    "cold_start_recalibrated_wmape": 0.24332129855001802,
+    "network_average_wmape": 0.3715102788290765,
+    "full_model_wmape": 0.10144428929172614
+   },
+   {
+    "zone_id": 11,
+    "zone": "Sarjapur Residential",
+    "dominant_archetype": "residential",
+    "archetype_seen_elsewhere": false,
+    "cold_start_wmape": 0.5909194214945329,
+    "cold_start_recalibrated_wmape": 0.5738067700295213,
+    "network_average_wmape": 0.5289821784189327,
+    "full_model_wmape": 0.12149721820574459
+   }
+  ]
+ },
+ "elasticity": [
+  {
+   "zone_id": 0,
+   "zone": "Indiranagar High Street",
+   "beta": -0.968912851689817,
+   "se": 0.06395087072116926,
+   "ci_lo": -1.0942565583033088,
+   "ci_hi": -0.8435691450763253,
+   "beta_naive_censored": -0.8209368656266609,
+   "n_obs": 8360,
+   "n_experiment_days": 50,
+   "beta_prod": -0.958497145652515,
+   "se_prod": 0.06723298914324523,
+   "true_beta": -0.9
+  },
+  {
+   "zone_id": 1,
+   "zone": "Koramangala Food Strip",
+   "beta": -0.9205684739706708,
+   "se": 0.06934870060667823,
+   "ci_lo": -1.0564919271597601,
+   "ci_hi": -0.7846450207815814,
+   "beta_naive_censored": -0.7201302466264404,
+   "n_obs": 8400,
+   "n_experiment_days": 60,
+   "beta_prod": -0.9240279289813154,
+   "se_prod": 0.06615833634253389,
+   "true_beta": -1.0
+  },
+  {
+   "zone_id": 2,
+   "zone": "MG Road Commercial",
+   "beta": -0.6825083192844457,
+   "se": 0.08287521259139055,
+   "ci_lo": -0.8449437359635712,
+   "ci_hi": -0.5200729026053201,
+   "beta_naive_censored": -0.512761806239413,
+   "n_obs": 8368,
+   "n_experiment_days": 37,
+   "beta_prod": -0.6980496800997804,
+   "se_prod": 0.0789592025180542,
+   "true_beta": -0.6
+  },
+  {
+   "zone_id": 3,
+   "zone": "Whitefield Tech Park",
+   "beta": -0.26461378051364387,
+   "se": 0.13457001991504006,
+   "ci_lo": -0.5283710195471224,
+   "ci_hi": -0.0008565414801653404,
+   "beta_naive_censored": -0.22306107036454365,
+   "n_obs": 8360,
+   "n_experiment_days": 30,
+   "beta_prod": -0.3394277063963302,
+   "se_prod": 0.12977917230675984,
+   "true_beta": -0.35
+  },
+  {
+   "zone_id": 4,
+   "zone": "Manyata Business Park",
+   "beta": -0.3387575879120094,
+   "se": 0.11149020341282653,
+   "ci_lo": -0.5572783866011494,
+   "ci_hi": -0.12023678922286937,
+   "beta_naive_censored": -0.30330556395118496,
+   "n_obs": 8364,
+   "n_experiment_days": 46,
+   "beta_prod": -0.31758221145184085,
+   "se_prod": 0.09965663669369666,
+   "true_beta": -0.3
+  },
+  {
+   "zone_id": 5,
+   "zone": "Majestic Transit Hub",
+   "beta": -0.4058125464737649,
+   "se": 0.08364403036929574,
+   "ci_lo": -0.5697548459975845,
+   "ci_hi": -0.24187024694994527,
+   "beta_naive_censored": -0.2886405337483127,
+   "n_obs": 8378,
+   "n_experiment_days": 33,
+   "beta_prod": -0.43175934998084253,
+   "se_prod": 0.08732434560679024,
+   "true_beta": -0.45
+  },
+  {
+   "zone_id": 6,
+   "zone": "Rajajinagar Mall",
+   "beta": -0.7995442831784133,
+   "se": 0.08579737588966987,
+   "ci_lo": -0.9677071399221663,
+   "ci_hi": -0.6313814264346603,
+   "beta_naive_censored": -0.7544660711076228,
+   "n_obs": 8368,
+   "n_experiment_days": 48,
+   "beta_prod": -0.7801933576323409,
+   "se_prod": 0.08573721303884038,
+   "true_beta": -0.8
+  },
+  {
+   "zone_id": 7,
+   "zone": "Jayanagar Market",
+   "beta": -1.026376943305235,
+   "se": 0.07816465467414557,
+   "ci_lo": -1.1795796664665603,
+   "ci_hi": -0.8731742201439097,
+   "beta_naive_censored": -0.9810646534645598,
+   "n_obs": 8372,
+   "n_experiment_days": 39,
+   "beta_prod": -1.0353843717376277,
+   "se_prod": 0.07195155917407049,
+   "true_beta": -1.1
+  },
+  {
+   "zone_id": 8,
+   "zone": "Stadium District",
+   "beta": -0.5212077336517349,
+   "se": 0.11220786422076771,
+   "ci_lo": -0.7411351475244397,
+   "ci_hi": -0.3012803197790302,
+   "beta_naive_censored": -0.5295032830088656,
+   "n_obs": 8340,
+   "n_experiment_days": 39,
+   "beta_prod": -0.4920994653123283,
+   "se_prod": 0.10839814632777602,
+   "true_beta": -0.5
+  },
+  {
+   "zone_id": 9,
+   "zone": "Hebbal Hospital Cluster",
+   "beta": -0.19619292080546633,
+   "se": 0.08151325404844235,
+   "ci_lo": -0.3559588987404133,
+   "ci_hi": -0.03642694287051931,
+   "beta_naive_censored": -0.18951137930708586,
+   "n_obs": 8369,
+   "n_experiment_days": 41,
+   "beta_prod": -0.20244346921480427,
+   "se_prod": 0.07795925280278819,
+   "true_beta": -0.25
+  },
+  {
+   "zone_id": 10,
+   "zone": "Airport Road Long-Stay",
+   "beta": -0.32492405229574056,
+   "se": 0.078634913786735,
+   "ci_lo": -0.4790484833177412,
+   "ci_hi": -0.17079962127373996,
+   "beta_naive_censored": -0.3226545785786602,
+   "n_obs": 8354,
+   "n_experiment_days": 45,
+   "beta_prod": -0.3131140929862564,
+   "se_prod": 0.07769746643579531,
+   "true_beta": -0.3
+  },
+  {
+   "zone_id": 11,
+   "zone": "Sarjapur Residential",
+   "beta": -0.6684587509301791,
+   "se": 0.10415973003541182,
+   "ci_lo": -0.8726118217995863,
+   "ci_hi": -0.464305680060772,
+   "beta_naive_censored": -0.6665533954310519,
+   "n_obs": 8390,
+   "n_experiment_days": 41,
+   "beta_prod": -0.6710176498885926,
+   "se_prod": 0.09695564432638185,
+   "true_beta": -0.7
+  }
+ ],
+ "policy": {
+  "guardrails": {
+   "min_mult": 0.7,
+   "max_mult": 1.4,
+   "max_step": 0.15,
+   "avg_cap": 1.15,
+   "turn_cost": 0.5,
+   "deter_cost": 0.5
+  },
+  "n_days": 29,
+  "policies": {
+   "status_quo": {
+    "revenue": 4045252.593846037,
+    "net_value": 3936615.7840800425,
+    "utilization": 0.502763400885471,
+    "turned_away": 4260.262061825185,
+    "lost_demand": 4641.2516629426,
+    "full_zone_hours": 50.758620689655174,
+    "avg_multiplier": 0.9710129310344826,
+    "price_volatility": 0.0071026986506746645,
+    "served": 94479.2982943977,
+    "revenue_uplift_vs_status_quo": 0.0,
+    "uplift_ci95": [
+     0.0,
+     0.0
+    ],
+    "net_value_uplift_vs_status_quo": 0.0,
+    "net_uplift_ci95": [
+     0.0,
+     0.0
+    ],
+    "daily_uplift": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "flat": {
+    "revenue": 4074615.4214998875,
+    "net_value": 3971763.507180867,
+    "utilization": 0.4991939514042585,
+    "turned_away": 4546.555860885203,
+    "lost_demand": 4399.070434005851,
+    "full_zone_hours": 52.48275862068966,
+    "avg_multiplier": 1.0,
+    "price_volatility": 0.0,
+    "served": 93808.52734788824,
+    "revenue_uplift_vs_status_quo": 0.007258589413803085,
+    "uplift_ci95": [
+     0.005232405146261276,
+     0.009076615898603783
+    ],
+    "net_value_uplift_vs_status_quo": 0.00892841085557916,
+    "net_uplift_ci95": [
+     0.007304876958443202,
+     0.010212926583454584
+    ],
+    "daily_uplift": [
+     0.010193759058818586,
+     0.010528807762328896,
+     0.010475448143404398,
+     0.002639609097785822,
+     -0.0022264469530164366,
+     0.01077806046263241,
+     0.010395919889091054,
+     0.010137659039552549,
+     0.010338608703878593,
+     0.009900540090452603,
+     0.0027142338620977924,
+     0.004328540952992288,
+     0.009716684092928807,
+     0.008911065009452379,
+     0.010086350510919218,
+     0.011010665551885124,
+     -0.004241841806206237,
+     -0.008118330331756685,
+     0.0018901544529934533,
+     0.010626759124754193,
+     0.010624099838394852,
+     0.011550106814893102,
+     0.010837769268514652,
+     0.010677379880826177,
+     -0.001884616478320389,
+     -0.0002197362212166265,
+     0.010554169670886848,
+     0.010930326169486193,
+     0.010507775345830472
+    ]
+   },
+   "dynamic_model": {
+    "revenue": 4572205.925691543,
+    "net_value": 4388345.876070841,
+    "utilization": 0.48129319544384397,
+    "turned_away": 1434.3306067920844,
+    "lost_demand": 8134.2845557440405,
+    "full_zone_hours": 38.689655172413794,
+    "avg_multiplier": 1.0851472701149425,
+    "price_volatility": 0.032733633183408294,
+    "served": 90444.61728780714,
+    "revenue_uplift_vs_status_quo": 0.13026462986443677,
+    "uplift_ci95": [
+     0.1191948280556624,
+     0.1401567976955989
+    ],
+    "net_value_uplift_vs_status_quo": 0.11475087150176755,
+    "net_uplift_ci95": [
+     0.10381191530136089,
+     0.12491917867643157
+    ],
+    "daily_uplift": [
+     0.15070368929134492,
+     0.1448111591400405,
+     0.1396047993804974,
+     0.07875000624347672,
+     0.07878902278594979,
+     0.12686768339732746,
+     0.1450268505815162,
+     0.1401729148400388,
+     0.14951360858703677,
+     0.1490067972325393,
+     0.07720394237840345,
+     0.07540135771473122,
+     0.11927913763151743,
+     0.16167795466632962,
+     0.143743226899252,
+     0.1486392832016592,
+     0.08317011547517761,
+     0.09681031812845808,
+     0.08218728676767961,
+     0.15779379667224847,
+     0.14854492012817988,
+     0.16017320660985002,
+     0.149277458877356,
+     0.15051860003833606,
+     0.1022875292413119,
+     0.08550046322344707,
+     0.15158450370859078,
+     0.1638171535871289,
+     0.1566486375218219
+    ]
+   },
+   "dynamic_naive_forecast": {
+    "revenue": 4557583.887942591,
+    "net_value": 4365824.237013667,
+    "utilization": 0.4797815095122199,
+    "turned_away": 1714.322489987816,
+    "lost_demand": 8417.786437397885,
+    "full_zone_hours": 36.206896551724135,
+    "avg_multiplier": 1.0883261494252874,
+    "price_volatility": 0.03671289355322339,
+    "served": 90160.54126753639,
+    "revenue_uplift_vs_status_quo": 0.12665001312302548,
+    "uplift_ci95": [
+     0.11444579570170586,
+     0.1378901684045299
+    ],
+    "net_value_uplift_vs_status_quo": 0.10902980541544705,
+    "net_uplift_ci95": [
+     0.09673995063641502,
+     0.12045165593365884
+    ],
+    "daily_uplift": [
+     0.15472404308075216,
+     0.14501625135257745,
+     0.1428037533087816,
+     0.07359915380505755,
+     0.07231418904689213,
+     0.10279272359032254,
+     0.1439145006662883,
+     0.13862431467114122,
+     0.1323226910352462,
+     0.14406346875629428,
+     0.07771434552525935,
+     0.07502013638863092,
+     0.1310225553108879,
+     0.14734435849655148,
+     0.1491745740850059,
+     0.1566508942251137,
+     0.06956449684420685,
+     0.08278784127826455,
+     0.07489533682908278,
+     0.15641893057000344,
+     0.14870914842118843,
+     0.16881311201453508,
+     0.1619291288574185,
+     0.1218592347456775,
+     0.0925722917053371,
+     0.08400184804977662,
+     0.15219384674394498,
+     0.1564463699773999,
+     0.15585468522169377
+    ]
+   },
+   "oracle": {
+    "revenue": 4631065.632242504,
+    "net_value": 4437451.304779844,
+    "utilization": 0.4810985967079811,
+    "turned_away": 854.9422971912242,
+    "lost_demand": 8294.348539594972,
+    "full_zone_hours": 39.96551724137931,
+    "avg_multiplier": 1.0930016762452106,
+    "price_volatility": 0.03336456771614192,
+    "served": 90408.0482933638,
+    "revenue_uplift_vs_status_quo": 0.1448149466086872,
+    "uplift_ci95": [
+     0.1346183038608095,
+     0.15405571891803366
+    ],
+    "net_value_uplift_vs_status_quo": 0.12722489269214865,
+    "net_uplift_ci95": [
+     0.11616861638128795,
+     0.1368717161801943
+    ],
+    "daily_uplift": [
+     0.1610743485428774,
+     0.14797866235174828,
+     0.1540734434574853,
+     0.09124893471237261,
+     0.09003555681121322,
+     0.15275388743257023,
+     0.1538255405158011,
+     0.15672247728024646,
+     0.15991835376548535,
+     0.1569194903099398,
+     0.08805941032992193,
+     0.0828000139358982,
+     0.13163184943798645,
+     0.1710426497908828,
+     0.15865514210783838,
+     0.17064953755353662,
+     0.12398944265428913,
+     0.1302005595418596,
+     0.10370798111282253,
+     0.1672858118686591,
+     0.15507114628632124,
+     0.17219559405295493,
+     0.16686627073655025,
+     0.1596801449163563,
+     0.11830070184237984,
+     0.09855571015522724,
+     0.17336374122411558,
+     0.17429757993933626,
+     0.16742210355922804
+    ]
+   }
+  },
+  "expected_vs_realized": {
+   "expected_revenue_uplift": 0.11721524450909238,
+   "realized_revenue_uplift": 0.13026462986443677,
+   "revenue_gap_pct": 0.011680278638766861
+  },
+  "share_of_oracle_net_gain": 0.9019529832061639,
+  "sensitivity_true_spill_share": {
+   "0.0": {
+    "revenue": 0.12858495552014104,
+    "net_value": 0.11299289481896357
+   },
+   "0.25": {
+    "revenue": 0.130264629864437,
+    "net_value": 0.11475087150176755
+   },
+   "0.5": {
+    "revenue": 0.1318886671916455,
+    "net_value": 0.11645064575047881
+   }
+  },
+  "sensitivity_elasticity_misspecification": {
+   "0.6": {
+    "revenue": 0.15003373386294805,
+    "net_value": 0.11352347343473657
+   },
+   "0.8": {
+    "revenue": 0.14321477213202782,
+    "net_value": 0.12051743679773685
+   },
+   "1.0": {
+    "revenue": 0.130264629864437,
+    "net_value": 0.11475087150176755
+   },
+   "1.25": {
+    "revenue": 0.11454582268185542,
+    "net_value": 0.10265206907117741
+   },
+   "1.5": {
+    "revenue": 0.1008404276318231,
+    "net_value": 0.09081085637575659
+   }
+  }
+ },
+ "tickets": {
+  "model": {
+   "per_class": {
+    "no_space": {
+     "precision": 0.8923076923076924,
+     "recall": 0.90625,
+     "f1": 0.8992248062015504,
+     "support": 128
+    },
+    "entry_delay": {
+     "precision": 0.8857142857142857,
+     "recall": 0.9117647058823529,
+     "f1": 0.8985507246376812,
+     "support": 102
+    },
+    "overcharge": {
+     "precision": 0.9175257731958762,
+     "recall": 0.8640776699029126,
+     "f1": 0.89,
+     "support": 103
+    },
+    "payment_failed": {
+     "precision": 0.9506172839506173,
+     "recall": 0.8850574712643678,
+     "f1": 0.9166666666666666,
+     "support": 87
+    },
+    "safety": {
+     "precision": 0.8275862068965517,
+     "recall": 0.9230769230769231,
+     "f1": 0.8727272727272727,
+     "support": 52
+    },
+    "signage": {
+     "precision": 0.8421052631578947,
+     "recall": 0.8275862068965517,
+     "f1": 0.8347826086956521,
+     "support": 58
+    },
+    "other": {
+     "precision": 0.9305555555555556,
+     "recall": 0.9571428571428572,
+     "f1": 0.9436619718309859,
+     "support": 70
+    }
+   },
+   "macro_f1": 0.893659150108544,
+   "accuracy": 0.8966666666666666
+  },
+  "keyword_baseline": {
+   "per_class": {
+    "no_space": {
+     "precision": 0.8738738738738738,
+     "recall": 0.7578125,
+     "f1": 0.8117154811715481,
+     "support": 128
+    },
+    "entry_delay": {
+     "precision": 0.6013071895424836,
+     "recall": 0.9019607843137255,
+     "f1": 0.7215686274509804,
+     "support": 102
+    },
+    "overcharge": {
+     "precision": 0.8674698795180723,
+     "recall": 0.6990291262135923,
+     "f1": 0.7741935483870968,
+     "support": 103
+    },
+    "payment_failed": {
+     "precision": 0.88,
+     "recall": 0.5057471264367817,
+     "f1": 0.6423357664233577,
+     "support": 87
+    },
+    "safety": {
+     "precision": 0.7714285714285715,
+     "recall": 0.5192307692307693,
+     "f1": 0.6206896551724138,
+     "support": 52
+    },
+    "signage": {
+     "precision": 0.6842105263157895,
+     "recall": 0.4482758620689655,
+     "f1": 0.5416666666666666,
+     "support": 58
+    },
+    "other": {
+     "precision": 0.5230769230769231,
+     "recall": 0.9714285714285714,
+     "f1": 0.68,
+     "support": 70
+    }
+   },
+   "macro_f1": 0.6845956778960091,
+   "accuracy": 0.71
+  },
+  "confusion": {
+   "labels": [
+    "no_space",
+    "entry_delay",
+    "overcharge",
+    "payment_failed",
+    "safety",
+    "signage",
+    "other"
+   ],
+   "matrix": [
+    [
+     116,
+     3,
+     3,
+     1,
+     1,
+     4,
+     0
+    ],
+    [
+     3,
+     93,
+     2,
+     0,
+     2,
+     1,
+     1
+    ],
+    [
+     3,
+     5,
+     89,
+     2,
+     2,
+     1,
+     1
+    ],
+    [
+     3,
+     2,
+     0,
+     77,
+     1,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     2,
+     0,
+     48,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     1,
+     1,
+     4,
+     48,
+     0
+    ],
+    [
+     2,
+     0,
+     0,
+     0,
+     0,
+     1,
+     67
+    ]
+   ]
+  },
+  "n_train": 1800,
+  "n_test": 600,
+  "mean_confidence": 0.8993368567333202,
+  "label_noise_note": "~5% of labels randomly flipped and ~15% of tickets mention two issues; scores are measured against these noisy labels.",
+  "stream_accuracy_vs_true_category": 0.9298849903672135,
+  "voc": {
+   "by_zone": [
+    {
+     "zone_id": 0,
+     "zone": "Indiranagar High Street",
+     "current": {
+      "no_space": 2.735273768724558,
+      "entry_delay": 0.9653907419027852,
+      "overcharge": 0.7240430564270889,
+      "payment_failed": 0.7240430564270889,
+      "safety": 0.9653907419027852,
+      "signage": 0.4022461424594938,
+      "other": 0.5631445994432913
+     },
+     "previous": {
+      "no_space": 1.8093465674110836,
+      "entry_delay": 0.2584780810587262,
+      "overcharge": 0.6892748828232699,
+      "payment_failed": 1.4647091259994485,
+      "safety": 0.6031155224703612,
+      "signage": 0.4307968017645437,
+      "other": 0.8615936035290874
+     }
+    },
+    {
+     "zone_id": 1,
+     "zone": "Koramangala Food Strip",
+     "current": {
+      "no_space": 4.243356494987535,
+      "entry_delay": 1.166923036121572,
+      "overcharge": 0.7425873866228186,
+      "payment_failed": 1.0608391237468837,
+      "safety": 0.9547552113721953,
+      "signage": 0.9547552113721953,
+      "other": 0.5304195618734419
+     },
+     "previous": {
+      "no_space": 3.2391461610719414,
+      "entry_delay": 1.5116015418335729,
+      "overcharge": 0.6478292322143883,
+      "payment_failed": 1.1876869257263785,
+      "safety": 0.4318861548095922,
+      "signage": 0.32391461610719413,
+      "other": 0.32391461610719413
+     }
+    },
+    {
+     "zone_id": 2,
+     "zone": "MG Road Commercial",
+     "current": {
+      "no_space": 4.076379708946489,
+      "entry_delay": 0.8735099376313905,
+      "overcharge": 0.6405739542630198,
+      "payment_failed": 1.164679916841854,
+      "safety": 0.40763797089464887,
+      "signage": 0.6988079501051124,
+      "other": 0.4658719667367416
+     },
+     "previous": {
+      "no_space": 1.5588367336758617,
+      "entry_delay": 0.5611812241233103,
+      "overcharge": 0.6235346934703446,
+      "payment_failed": 1.184715917593655,
+      "safety": 0.8105951015114481,
+      "signage": 0.2494138773881379,
+      "other": 0.43647428542924127
+     }
+    },
+    {
+     "zone_id": 3,
+     "zone": "Whitefield Tech Park",
+     "current": {
+      "no_space": 2.581745013748817,
+      "entry_delay": 0.9425418304162346,
+      "overcharge": 0.49176095499977457,
+      "payment_failed": 0.8605816712496055,
+      "safety": 0.5737211141664037,
+      "signage": 0.4098007958331455,
+      "other": 0.6147011937497183
+     },
+     "previous": {
+      "no_space": 3.946281246531589,
+      "entry_delay": 0.7810348300427102,
+      "overcharge": 0.4932851558164486,
+      "payment_failed": 1.0276774079509345,
+      "safety": 0.534392252134486,
+      "signage": 0.328856770544299,
+      "other": 0.5754993484525234
+     }
+    },
+    {
+     "zone_id": 4,
+     "zone": "Manyata Business Park",
+     "current": {
+      "no_space": 1.1421435750616757,
+      "entry_delay": 0.9137148600493405,
+      "overcharge": 1.4847866475801785,
+      "payment_failed": 1.0279292175555081,
+      "safety": 0.5710717875308379,
+      "signage": 0.4568574300246703,
+      "other": 0.6091432400328938
+     },
+     "previous": {
+      "no_space": 0.7865066912056755,
+      "entry_delay": 0.7865066912056755,
+      "overcharge": 0.47190401472340526,
+      "payment_failed": 1.179760036808513,
+      "safety": 0.5505546838439728,
+      "signage": 0.39325334560283776,
+      "other": 0.6292053529645404
+     }
+    },
+    {
+     "zone_id": 5,
+     "zone": "Majestic Transit Hub",
+     "current": {
+      "no_space": 4.602077210304469,
+      "entry_delay": 1.0459266387055612,
+      "overcharge": 0.48809909806259527,
+      "payment_failed": 0.7670128683840782,
+      "safety": 0.6275559832233367,
+      "signage": 0.941333974835005,
+      "other": 0.5578275406429659
+     },
+     "previous": {
+      "no_space": 2.2511368240961684,
+      "entry_delay": 1.0505305179115454,
+      "overcharge": 0.5627842060240421,
+      "payment_failed": 1.0505305179115454,
+      "safety": 0.6378221001605812,
+      "signage": 0.3751894706826948,
+      "other": 0.7503789413653896
+     }
+    },
+    {
+     "zone_id": 6,
+     "zone": "Rajajinagar Mall",
+     "current": {
+      "no_space": 1.6359636471656929,
+      "entry_delay": 0.38746507432871674,
+      "overcharge": 1.0762918731353244,
+      "payment_failed": 1.3346019226878023,
+      "safety": 0.5166200991049557,
+      "signage": 0.43051674925412975,
+      "other": 0.38746507432871674
+     },
+     "previous": {
+      "no_space": 0.86094785827892,
+      "entry_delay": 0.7703217679337705,
+      "overcharge": 0.7250087227611957,
+      "payment_failed": 0.9062609034514946,
+      "safety": 0.40781740655317256,
+      "signage": 0.22656522586287364,
+      "other": 0.7703217679337705
+     }
+    },
+    {
+     "zone_id": 7,
+     "zone": "Jayanagar Market",
+     "current": {
+      "no_space": 0.6492452523940918,
+      "entry_delay": 0.5410377103284099,
+      "overcharge": 1.406698046853866,
+      "payment_failed": 0.6492452523940918,
+      "safety": 0.7574527944597739,
+      "signage": 0.6492452523940918,
+      "other": 0.21641508413136396
+     },
+     "previous": {
+      "no_space": 0.0,
+      "entry_delay": 0.6195530957003015,
+      "overcharge": 0.5162942464169179,
+      "payment_failed": 1.4456238899673701,
+      "safety": 0.4130353971335344,
+      "signage": 0.30977654785015074,
+      "other": 0.7228119449836851
+     }
+    },
+    {
+     "zone_id": 8,
+     "zone": "Stadium District",
+     "current": {
+      "no_space": 1.4478118134204918,
+      "entry_delay": 0.47053883936165974,
+      "overcharge": 1.230640041407418,
+      "payment_failed": 0.9048823833878072,
+      "safety": 0.7239059067102459,
+      "signage": 0.5067341346971721,
+      "other": 0.5791247253681966
+     },
+     "previous": {
+      "no_space": 1.1826796564315598,
+      "entry_delay": 0.2587111748444037,
+      "overcharge": 1.1826796564315598,
+      "payment_failed": 0.8130922637966973,
+      "safety": 0.8500510030601837,
+      "signage": 0.5174223496888074,
+      "other": 0.7022160460062387
+     }
+    },
+    {
+     "zone_id": 9,
+     "zone": "Hebbal Hospital Cluster",
+     "current": {
+      "no_space": 0.4952526496016754,
+      "entry_delay": 0.1415007570290501,
+      "overcharge": 0.5660030281162004,
+      "payment_failed": 0.8490045421743007,
+      "safety": 0.4952526496016754,
+      "signage": 0.2830015140581002,
+      "other": 0.6367534066307254
+     },
+     "previous": {
+      "no_space": 0.22850353037954438,
+      "entry_delay": 0.6093427476787849,
+      "overcharge": 0.8378462780583293,
+      "payment_failed": 1.2948533388174182,
+      "safety": 0.9140141215181775,
+      "signage": 0.45700706075908876,
+      "other": 0.7616784345984813
+     }
+    },
+    {
+     "zone_id": 10,
+     "zone": "Airport Road Long-Stay",
+     "current": {
+      "no_space": 0.1893945915791721,
+      "entry_delay": 0.5854014648810774,
+      "overcharge": 0.5681837747375164,
+      "payment_failed": 1.033061408613666,
+      "safety": 0.7403606761731273,
+      "signage": 0.49931301416327195,
+      "other": 0.6887076057424439
+     },
+     "previous": {
+      "no_space": 0.2563235828910417,
+      "entry_delay": 0.5126471657820834,
+      "overcharge": 0.5446876136434635,
+      "payment_failed": 1.1214156751483073,
+      "safety": 0.6888696290196745,
+      "signage": 0.44856627005932287,
+      "other": 0.7048898529503645
+     }
+    },
+    {
+     "zone_id": 11,
+     "zone": "Sarjapur Residential",
+     "current": {
+      "no_space": 0.10845869350657802,
+      "entry_delay": 0.10845869350657802,
+      "overcharge": 0.4338347740263121,
+      "payment_failed": 0.6507521610394681,
+      "safety": 0.6507521610394681,
+      "signage": 0.5422934675328901,
+      "other": 1.0845869350657802
+     },
+     "previous": {
+      "no_space": 0.11793426344155768,
+      "entry_delay": 0.5896713172077883,
+      "overcharge": 0.707605580649346,
+      "payment_failed": 1.2972768978571343,
+      "safety": 0.8255398440909038,
+      "signage": 0.707605580649346,
+      "other": 1.1793426344155766
+     }
+    }
+   ],
+   "complaint_model": {
+    "per_parked_hour": 5.677383085015139e-05,
+    "per_shock_unit": 0.0024615176140124293,
+    "note": "OLS on zone-days: predicted overcharge tickets = a*parked + b*sum(max(m-1.05,0)*vehicles)"
+   },
+   "weekly": {
+    "weeks": [
+     "2025-10-06",
+     "2025-10-13",
+     "2025-10-20",
+     "2025-10-27",
+     "2025-11-03",
+     "2025-11-10",
+     "2025-11-17",
+     "2025-11-24",
+     "2025-12-01",
+     "2025-12-08",
+     "2025-12-15",
+     "2025-12-22",
+     "2025-12-29",
+     "2026-01-05",
+     "2026-01-12",
+     "2026-01-19",
+     "2026-01-26",
+     "2026-02-02",
+     "2026-02-09",
+     "2026-02-16",
+     "2026-02-23",
+     "2026-03-02",
+     "2026-03-09",
+     "2026-03-16",
+     "2026-03-23",
+     "2026-03-30",
+     "2026-04-06",
+     "2026-04-13",
+     "2026-04-20",
+     "2026-04-27",
+     "2026-05-04",
+     "2026-05-11",
+     "2026-05-18",
+     "2026-05-25",
+     "2026-06-01",
+     "2026-06-08",
+     "2026-06-15",
+     "2026-06-22",
+     "2026-06-29",
+     "2026-07-06",
+     "2026-07-13",
+     "2026-07-20",
+     "2026-07-27",
+     "2026-08-03",
+     "2026-08-10",
+     "2026-08-17",
+     "2026-08-24",
+     "2026-08-31",
+     "2026-09-07",
+     "2026-09-14",
+     "2026-09-21",
+     "2026-09-28",
+     "2026-10-05"
+    ],
+    "categories": [
+     "no_space",
+     "entry_delay",
+     "overcharge",
+     "payment_failed",
+     "safety",
+     "signage",
+     "other"
+    ],
+    "counts": [
+     [
+      47,
+      19,
+      38,
+      64,
+      43,
+      28,
+      40
+     ],
+     [
+      47,
+      28,
+      60,
+      60,
+      48,
+      25,
+      38
+     ],
+     [
+      33,
+      23,
+      61,
+      59,
+      42,
+      22,
+      27
+     ],
+     [
+      58,
+      40,
+      64,
+      65,
+      37,
+      24,
+      31
+     ],
+     [
+      71,
+      24,
+      40,
+      61,
+      41,
+      39,
+      33
+     ],
+     [
+      24,
+      27,
+      48,
+      66,
+      41,
+      29,
+      34
+     ],
+     [
+      41,
+      34,
+      53,
+      51,
+      25,
+      33,
+      31
+     ],
+     [
+      49,
+      34,
+      45,
+      49,
+      29,
+      27,
+      34
+     ],
+     [
+      89,
+      37,
+      56,
+      50,
+      36,
+      27,
+      32
+     ],
+     [
+      69,
+      41,
+      57,
+      67,
+      43,
+      32,
+      49
+     ],
+     [
+      86,
+      29,
+      74,
+      55,
+      33,
+      31,
+      49
+     ],
+     [
+      99,
+      29,
+      45,
+      66,
+      38,
+      30,
+      47
+     ],
+     [
+      82,
+      42,
+      59,
+      54,
+      35,
+      28,
+      44
+     ],
+     [
+      41,
+      23,
+      34,
+      56,
+      34,
+      31,
+      40
+     ],
+     [
+      43,
+      35,
+      47,
+      49,
+      26,
+      23,
+      32
+     ],
+     [
+      30,
+      18,
+      55,
+      45,
+      38,
+      27,
+      38
+     ],
+     [
+      50,
+      38,
+      54,
+      57,
+      37,
+      31,
+      32
+     ],
+     [
+      36,
+      24,
+      53,
+      75,
+      29,
+      28,
+      25
+     ],
+     [
+      31,
+      43,
+      40,
+      58,
+      45,
+      28,
+      26
+     ],
+     [
+      30,
+      25,
+      50,
+      53,
+      33,
+      27,
+      41
+     ],
+     [
+      41,
+      27,
+      46,
+      60,
+      34,
+      24,
+      47
+     ],
+     [
+      62,
+      24,
+      44,
+      40,
+      43,
+      18,
+      34
+     ],
+     [
+      78,
+      34,
+      42,
+      75,
+      40,
+      31,
+      49
+     ],
+     [
+      129,
+      39,
+      50,
+      64,
+      34,
+      31,
+      51
+     ],
+     [
+      30,
+      37,
+      45,
+      62,
+      29,
+      28,
+      24
+     ],
+     [
+      70,
+      31,
+      32,
+      55,
+      34,
+      24,
+      33
+     ],
+     [
+      41,
+      27,
+      59,
+      57,
+      29,
+      39,
+      33
+     ],
+     [
+      101,
+      35,
+      58,
+      67,
+      44,
+      21,
+      36
+     ],
+     [
+      68,
+      39,
+      31,
+      64,
+      43,
+      33,
+      27
+     ],
+     [
+      56,
+      23,
+      52,
+      58,
+      31,
+      36,
+      30
+     ],
+     [
+      87,
+      40,
+      35,
+      55,
+      32,
+      28,
+      40
+     ],
+     [
+      66,
+      42,
+      50,
+      63,
+      31,
+      25,
+      43
+     ],
+     [
+      52,
+      33,
+      56,
+      62,
+      32,
+      28,
+      37
+     ],
+     [
+      46,
+      38,
+      40,
+      59,
+      33,
+      35,
+      43
+     ],
+     [
+      42,
+      27,
+      47,
+      63,
+      45,
+      30,
+      42
+     ],
+     [
+      60,
+      39,
+      46,
+      46,
+      49,
+      24,
+      32
+     ],
+     [
+      85,
+      30,
+      52,
+      70,
+      47,
+      39,
+      46
+     ],
+     [
+      45,
+      28,
+      71,
+      56,
+      36,
+      31,
+      39
+     ],
+     [
+      101,
+      43,
+      55,
+      65,
+      36,
+      40,
+      40
+     ],
+     [
+      84,
+      34,
+      47,
+      74,
+      44,
+      40,
+      36
+     ],
+     [
+      59,
+      39,
+      73,
+      73,
+      30,
+      33,
+      35
+     ],
+     [
+      97,
+      55,
+      66,
+      60,
+      37,
+      30,
+      43
+     ],
+     [
+      96,
+      38,
+      56,
+      68,
+      24,
+      25,
+      27
+     ],
+     [
+      72,
+      46,
+      59,
+      55,
+      24,
+      19,
+      36
+     ],
+     [
+      73,
+      43,
+      50,
+      60,
+      41,
+      28,
+      31
+     ],
+     [
+      84,
+      39,
+      51,
+      62,
+      49,
+      29,
+      41
+     ],
+     [
+      69,
+      42,
+      38,
+      66,
+      40,
+      22,
+      43
+     ],
+     [
+      71,
+      45,
+      37,
+      82,
+      43,
+      20,
+      40
+     ],
+     [
+      108,
+      48,
+      41,
+      68,
+      32,
+      31,
+      52
+     ],
+     [
+      81,
+      39,
+      42,
+      64,
+      37,
+      29,
+      31
+     ],
+     [
+      79,
+      28,
+      53,
+      40,
+      42,
+      30,
+      32
+     ],
+     [
+      132,
+      43,
+      52,
+      54,
+      46,
+      30,
+      49
+     ],
+     [
+      113,
+      57,
+      55,
+      66,
+      37,
+      43,
+      37
+     ]
+    ]
+   },
+   "overcharge_vs_price": [
+    {
+     "multiplier": 0.8,
+     "per_10k_parked_hours": 0.6601376341752349
+    },
+    {
+     "multiplier": 0.9,
+     "per_10k_parked_hours": 0.6284195248948894
+    },
+    {
+     "multiplier": 1.0,
+     "per_10k_parked_hours": 0.6495645690786974
+    },
+    {
+     "multiplier": 1.1,
+     "per_10k_parked_hours": 1.596620078111567
+    },
+    {
+     "multiplier": 1.25,
+     "per_10k_parked_hours": 4.926647160112161
+    }
+   ],
+   "labels": {
+    "no_space": "No space / availability",
+    "entry_delay": "Entry & exit delays",
+    "overcharge": "Overcharge / price shock",
+    "payment_failed": "Payment failures",
+    "safety": "Safety & security",
+    "signage": "Signage & navigation",
+    "other": "Other / feedback"
+   },
+   "recent": [
+    {
+     "ts": "2026-10-14T22:00:00",
+     "zone_id": 5,
+     "text": "complaint: app showed 20 bays free but every slot was taken near the main raod",
+     "pred": "no_space",
+     "confidence": 0.7089943219146488
+    },
+    {
+     "ts": "2026-10-14T21:00:00",
+     "zone_id": 5,
+     "text": "urgent! app sowed 20 bays free but every slot was taken. also why was I charged double compared to yesterday for the saem lot near the mian road!!",
+     "pred": "no_space",
+     "confidence": 0.5813503534063719
+    },
+    {
+     "ts": "2026-10-14T21:00:00",
+     "zone_id": 5,
+     "text": "hello tea, jagah nahi mili, parking full thi bahut der around 7pm",
+     "pred": "no_space",
+     "confidence": 0.8814801153846357
+    },
+    {
+     "ts": "2026-10-14T21:00:00",
+     "zone_id": 4,
+     "text": "hi, app showed 20 bays fre but every slot was taken pls fix",
+     "pred": "no_space",
+     "confidence": 0.5496603190959949
+    },
+    {
+     "ts": "2026-10-14T21:00:00",
+     "zone_id": 9,
+     "text": "BRO REFUND FOR FAILED PAYMET STILL NOT RECEIVED ON SUNDAY",
+     "pred": "payment_failed",
+     "confidence": 0.8735594890894914
+    },
+    {
+     "ts": "2026-10-14T21:00:00",
+     "zone_id": 3,
+     "text": "complaint: app navigtaion took me to the back gate which was closed around 7pm",
+     "pred": "signage",
+     "confidence": 0.955534069969788
+    },
+    {
+     "ts": "2026-10-14T20:00:00",
+     "zone_id": 4,
+     "text": "complaint: payment nahi ho rha app mein error aa raha hai very frustrating!!",
+     "pred": "payment_failed",
+     "confidence": 0.9903400673397659
+    },
+    {
+     "ts": "2026-10-14T20:00:00",
+     "zone_id": 6,
+     "text": "HI, RAMP WAS SLIPPERY AFTER RAIN, ALMOST SKIDDED NEAR THE MAIN ROAD!!",
+     "pred": "safety",
+     "confidence": 0.9829459279482234
+    },
+    {
+     "ts": "2026-10-14T19:00:00",
+     "zone_id": 5,
+     "text": "urgent! app showed 20 bays free but every slot was taken",
+     "pred": "no_space",
+     "confidence": 0.969370243320811
+    },
+    {
+     "ts": "2026-10-14T19:00:00",
+     "zone_id": 4,
+     "text": "HI, PAYMENT FAILED BUT MONEY GOT DEDUCTED PLS FIX",
+     "pred": "payment_failed",
+     "confidence": 0.921142859269434
+    },
+    {
+     "ts": "2026-10-14T19:00:00",
+     "zone_id": 8,
+     "text": "PAYMENT FAILED BUT MONEY GOT DEDUCTED THIRD TIME THIS WEEK",
+     "pred": "payment_failed",
+     "confidence": 0.8406515117179267
+    },
+    {
+     "ts": "2026-10-14T18:00:00",
+     "zone_id": 11,
+     "text": "app navigation took me to the back gate which was closed :(",
+     "pred": "signage",
+     "confidence": 0.9482059078392753
+    },
+    {
+     "ts": "2026-10-14T18:00:00",
+     "zone_id": 5,
+     "text": "no free bay on any leve.l also pamyent nahi ho raha app mein error aa raha hai yesterday",
+     "pred": "no_space",
+     "confidence": 0.5332180616132682
+    },
+    {
+     "ts": "2026-10-14T18:00:00",
+     "zone_id": 4,
+     "text": "basement was dark and felt unsafe at night",
+     "pred": "safety",
+     "confidence": 0.9933930852210985
+    },
+    {
+     "ts": "2026-10-14T18:00:00",
+     "zone_id": 6,
+     "text": "hi, guard was rude and shouted at me, plus barrier not lifting after payment, people honking behind",
+     "pred": "safety",
+     "confidence": 0.8220319934375522
+    },
+    {
+     "ts": "2026-10-14T18:00:00",
+     "zone_id": 5,
+     "text": "no free bay on any level",
+     "pred": "no_space",
+     "confidence": 0.9933004907087244
+    },
+    {
+     "ts": "2026-10-14T17:00:00",
+     "zone_id": 9,
+     "text": "Hi, payment filed but money got deducted again today!!",
+     "pred": "payment_failed",
+     "confidence": 0.9364809561505826
+    },
+    {
+     "ts": "2026-10-14T17:00:00",
+     "zone_id": 1,
+     "text": "coplaint: rate increased suddenly, flet cheated. also no free bay on any level very frustrting",
+     "pred": "overcharge",
+     "confidence": 0.49008197102060164
+    },
+    {
+     "ts": "2026-10-14T16:00:00",
+     "zone_id": 2,
+     "text": "payment failed but money got deducted",
+     "pred": "payment_failed",
+     "confidence": 0.9797209199579424
+    },
+    {
+     "ts": "2026-10-14T16:00:00",
+     "zone_id": 2,
+     "text": "no slot available even after booking third time this week",
+     "pred": "no_space",
+     "confidence": 0.9757415838690482
+    },
+    {
+     "ts": "2026-10-14T16:00:00",
+     "zone_id": 4,
+     "text": "Parking fee was way highr than app estimate",
+     "pred": "overcharge",
+     "confidence": 0.9752295583913813
+    },
+    {
+     "ts": "2026-10-14T16:00:00",
+     "zone_id": 3,
+     "text": "hi, boom barrier stuck at the gate around 7pm",
+     "pred": "entry_delay",
+     "confidence": 0.9360612325976012
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 5,
+     "text": "hi, jagah nhai mili, parking full thi bahut der :(",
+     "pred": "no_space",
+     "confidence": 0.8843796918632625
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 1,
+     "text": "JAGAH NAHI MILI, PARKING FLUL THI BAHUT DER :(",
+     "pred": "no_space",
+     "confidence": 0.9689573174912123
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 5,
+     "text": "urgent! parking ful tha app mein available dikha raha tha very frustrating",
+     "pred": "no_space",
+     "confidence": 0.953620036519634
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 7,
+     "text": "hi, app naigation took me to the back gate which was closed yesterday!!",
+     "pred": "signage",
+     "confidence": 0.9556916417385016
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 5,
+     "text": "hello team, no slot available even after booking third time this week",
+     "pred": "no_space",
+     "confidence": 0.904431316467027
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 3,
+     "text": "bro no free bay on any level this morning",
+     "pred": "no_space",
+     "confidence": 0.9862566636343693
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 0,
+     "text": "bro andhera tha, lights bnad the, bhut unsafe lga near the man road",
+     "pred": "safety",
+     "confidence": 0.8832149023312014
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 1,
+     "text": "hello team, andhera tha, lights band the, bahut unsafe lga again today!!",
+     "pred": "safety",
+     "confidence": 0.8989969453941868
+    },
+    {
+     "ts": "2026-10-14T15:00:00",
+     "zone_id": 8,
+     "text": "payment failed but mney got deducted very frustratig",
+     "pred": "payment_failed",
+     "confidence": 0.8996139725524919
+    },
+    {
+     "ts": "2026-10-14T14:00:00",
+     "zone_id": 3,
+     "text": "complaint: basement was dark and felt unsafe at night this morning",
+     "pred": "safety",
+     "confidence": 0.9590797266175887
+    },
+    {
+     "ts": "2026-10-14T14:00:00",
+     "zone_id": 5,
+     "text": "hello team, price board not visilbe at the entrance :(",
+     "pred": "signage",
+     "confidence": 0.9685691440181695
+    },
+    {
+     "ts": "2026-10-14T13:00:00",
+     "zone_id": 10,
+     "text": "complaint: FASTag not detected at the barrier, had to wait near the man road",
+     "pred": "entry_delay",
+     "confidence": 0.9647444594394993
+    },
+    {
+     "ts": "2026-10-14T12:00:00",
+     "zone_id": 5,
+     "text": "great serivce, thanks",
+     "pred": "other",
+     "confidence": 0.9084224389005784
+    },
+    {
+     "ts": "2026-10-14T11:00:00",
+     "zone_id": 0,
+     "text": "urgent! app navigation took me to the back gate which was clsoed",
+     "pred": "signage",
+     "confidence": 0.9257076348056557
+    },
+    {
+     "ts": "2026-10-14T10:00:00",
+     "zone_id": 4,
+     "text": "charged much more than the displayed rate, plus no signs to find the exit, got lost inside",
+     "pred": "signage",
+     "confidence": 0.6156229022846967
+    },
+    {
+     "ts": "2026-10-14T10:00:00",
+     "zone_id": 3,
+     "text": "hello tema, board said 60 per hour but I paid 240 for two hours, plus app navigation took me to the back gate which was closed yesterday",
+     "pred": "signage",
+     "confidence": 0.5200113184651035
+    },
+    {
+     "ts": "2026-10-14T10:00:00",
+     "zone_id": 4,
+     "text": "FATSag not detected at the barrier, had to wait",
+     "pred": "entry_delay",
+     "confidence": 0.9729036557292673
+    },
+    {
+     "ts": "2026-10-14T09:00:00",
+     "zone_id": 5,
+     "text": "boom barrier stuck at the gate :(",
+     "pred": "entry_delay",
+     "confidence": 0.8698045760003295
+    }
+   ]
+  }
+ },
+ "assumptions": [
+  "All data is synthetic. Known ground truth lets us grade the estimator, forecaster and pricing policy, which real data cannot.",
+  "Weather 'forecasts' are the true weather plus realistic error (misses, false alarms, magnitude noise).",
+  "Price experiments are randomized per zone-day; unconstrained demand = occupied + drivers turned away (an app can log this).",
+  "Spillover to neighbouring lots is a modelling assumption (25% by default); results are shown across 0-50%.",
+  "Pricing replay is an expected-value simulation against the hidden true demand, not a live A/B test."
+ ]
+}
