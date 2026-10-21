@@ -1,11 +1,10 @@
 # Parkwise
 
 **[Live Demo](https://parkwise-xeoq.onrender.com/) · [Product Brief](PRODUCT.md)**
+
 **Parking demand forecasting and guardrailed dynamic pricing, end to end.**
 A day-ahead forecaster, a price-sensitivity estimator built on randomised experiments, a constrained
 pricing optimiser, a ticket classifier, and a dashboard. All of it runs offline with no API keys.
-
-**Product brief:** [Metrics, rollout plan, and risks → PRODUCT.md](PRODUCT.md)
 
 ![Overview](docs/overview.png)
 
