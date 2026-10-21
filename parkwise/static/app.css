@@ -40,7 +40,7 @@ button, select, input { font: inherit; color: inherit; }
 .rail-foot { margin-top: auto; font-size: 12.5px; color: var(--muted); padding: 0 8px; }
 .rail-foot button { margin-top: 8px; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; color: var(--ink2); }
 
-main { padding: 28px 32px 64px; max-width: 1240px; width: 100%; min-width: 0; }
+main { padding: 28px 32px 64px; width: 100%; min-width: 0; }
 .page-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px; margin-bottom: 22px; }
 .page-head p { color: var(--ink2); margin: 6px 0 0; max-width: 62ch; }
 .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
