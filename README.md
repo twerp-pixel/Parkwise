@@ -10,7 +10,7 @@ pricing optimiser, a ticket classifier, and a dashboard. All of it runs offline 
 
 <p><img src="docs/pricing.png" alt="Pricing studio" width="49%"> <img src="docs/model-health.png" alt="Model health" width="49%"></p>
 
-> **Key product decision:** The first optimizer increased simulated revenue by 18%, but priced out too many drivers. I added a goodwill cost for turned-away and priced-out drivers, accepting a +13% revenue improvement in exchange for a more balanced outcome.
+> **Key product decision:** The first optimizer increased simulated revenue by 18%, but priced out too many drivers. Therefore, added a goodwill cost for turned-away and priced-out drivers, accepting a +13% revenue improvement in exchange for a more balanced outcome.
 > **All data is synthetic.** Real parking telemetry is proprietary, so a simulator with *known* demand
 > and price sensitivity generates the data. That is a feature as well as a limit: it lets every stage be
 > graded against the truth, which real data never allows. See [Limitations](#limitations).
