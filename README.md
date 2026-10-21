@@ -4,10 +4,13 @@
 A day-ahead forecaster, a price-sensitivity estimator built on randomised experiments, a constrained
 pricing optimiser, a ticket classifier, and a dashboard. All of it runs offline with no API keys.
 
+**Product brief:** [Metrics, rollout plan, and risks → PRODUCT.md](PRODUCT.md)
+
 ![Overview](docs/overview.png)
 
 <p><img src="docs/pricing.png" alt="Pricing studio" width="49%"> <img src="docs/model-health.png" alt="Model health" width="49%"></p>
 
+> **Key product decision:** The first optimizer increased simulated revenue by 18%, but priced out too many drivers. I added a goodwill cost for turned-away and priced-out drivers, accepting a +13% revenue improvement in exchange for a more balanced outcome.
 > **All data is synthetic.** Real parking telemetry is proprietary, so a simulator with *known* demand
 > and price sensitivity generates the data. That is a feature as well as a limit: it lets every stage be
 > graded against the truth, which real data never allows. See [Limitations](#limitations).
@@ -35,8 +38,7 @@ python -m parkwise serve          # http://127.0.0.1:8000  (artifacts/ is includ
 python -m parkwise build          # regenerate everything (~2 min)
 python -m unittest discover -s tests -t .   # 41 tests, ~6 s
 ```
-
-Developed and tested on Python 3.13. Nothing is downloaded at runtime: the charts are hand-written SVG.
+Tested with Python 3.13. The application runs locally without API keys.
 
 ## How it works
 
