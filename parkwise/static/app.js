@@ -254,14 +254,14 @@ function voiceView() {
 
 function aboutView() {
   const d = state.report.data;
-  fill(view, pageHead("How it works", "One pipeline from raw parking logs to a price you can defend."),
+  fill(view, pageHead("How it works", "From parking data to pricing recommendations"),
     panel("The pipeline", null, h("ul", { class: "plain" },
       h("li", {}, h("b", {}, "Simulate. "), `A ${d.zones}-zone city over ${dlabel(d.start)} to ${dlabel(d.end)} with weather, events, holidays, sensor outages and capacity-capped occupancy. Known ground truth lets every stage be graded.`),
       h("li", {}, h("b", {}, "Estimate price sensitivity. "), `Randomised price tests on ${fmt.pct(d.experiment_share)} of zone-days identify how demand responds to price, using drivers turned away to see demand a full lot hides.`),
       h("li", {}, h("b", {}, "Forecast. "), "Gradient boosting predicts demand at the base price one day ahead, with calibrated 80% ranges. Features use only information available the evening before."),
       h("li", {}, h("b", {}, "Price. "), "Dynamic programming picks hourly multipliers per zone under guardrails on price level, price changes and daily average, trading revenue against turned-away and priced-out drivers."),
       h("li", {}, h("b", {}, "Listen. "), "A text classifier turns tickets into causes, and a fitted complaint curve projects the customer cost of each plan."))),
-    panel("What to be careful about", null, h("ul", { class: "plain" },
+    panel("Assumptions and Trade-offs", null, h("ul", { class: "plain" },
       h("li", {}, "Results come from a simulator. Real data would add noise, reporting gaps and behaviours not modelled here."),
       h("li", {}, "The pricing replay is an expected-value simulation, not an A/B test. A real launch would start with a few zones and a holdout."),
       h("li", {}, "Spillover to nearby lots is assumed, not learned. The dashboard shows how little it changes the result."),
