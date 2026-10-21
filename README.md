@@ -65,7 +65,7 @@ Tested with Python 3.13. The application runs locally without API keys.
 - **Serving.** Forecasts are a nightly batch job stored as arrays; the API combines them with the demand
   curve and optimiser in milliseconds.
 
-## Decisions worth discussing
+## Modeling Decisions
 
 1. **Censored demand.** A full lot hides demand. Estimating price sensitivity from occupancy understates it
    exactly where it matters (Koramangala: -0.72 naive vs -1.00 true). The estimator uses arrivals
